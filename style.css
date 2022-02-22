@@ -15,6 +15,7 @@ body {
 
 .main-content {
     display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -25,16 +26,15 @@ li {
     list-style-type: none;
 }
 
-ul {
+.header ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header {
     width: 100%;
     height: 56px;
-    background-color: red;
     display: flex;
     align-items: center;
     background: #1F2937
@@ -56,4 +56,92 @@ ul {
     color: #e5e7eb;
     font-size: 18px;
     font-weight: 300;
+}
+
+.section-1 {
+    width: 100%;
+    height: 500px;
+    background: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sign-up-header-btn {
+    padding: 8px 24px;
+    background: #3882F6;
+    color: #f9f9f9;
+    border-radius: 6px;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    max-width: 400px;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
+    max-width: 500px;
+}
+
+.section-1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.padding-left {
+    padding-left: 18%;
+}
+
+.padding-right {
+    padding-right: 18%;
+}
+
+.section-1-image img {
+    border-radius: 8px;
+}
+
+/* NOTE: If I made another container within each section (header, sec 1, 2 etc) then I could set the section backgrounds and set the content (within this new header) to be 60%. Then I could just use justify-content space between instead of having to do separate padding for left and right */
+
+/* NOTE: for section 2, rather than setting a fixed height for the section, I let the section size be determined by the content itself (with padding for example) */
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    gap: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 56px;
+}
+
+.header-text {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.single-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+.single-card img {
+    border-radius: 8px;
+    margin-bottom: 8px;
 }

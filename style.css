@@ -220,3 +220,11 @@ li {
     align-self: center;
     justify-self: center;
 }
+
+.footer {
+    background: #1F2937;
+    color: #e5e7eb;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
